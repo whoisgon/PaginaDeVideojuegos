@@ -3,7 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite; }
+  text-decoration: none; }
+
+.colorete {
+  background-color: peachpuff; }
+
+h3 {
+  padding: 2rem; }
 
 body {
   background-color: antiquewhite; }
@@ -11,18 +17,31 @@ body {
 .text {
   font-family: 'Nunito', sans-serif; }
 
-.titu {
-  text-align: center;
-  font-size: 700%;
-  font-family: 'Press Start 2P', cursive; }
-
 ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   list-style-type: none;
   font-family: 'Nunito', sans-serif;
   font-size: 150%; }
+
+hr {
+  margin: 1rem 0;
+  color: red;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.5; }
+
+hr:not([size]) {
+  height: 3px; }
+
+.carousel-item {
+  transition: 1s; }
+
+.contenedores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 /*NAVBAR*/
 .nav-item {
@@ -32,6 +51,9 @@ ul {
 .navbar {
   padding-top: 0;
   padding-bottom: 0; }
+
+.container-fluid {
+  background-color: peachpuff; }
 
 /*IMAGENES*/
 .imagen {
@@ -232,7 +254,7 @@ button {
 /*FOOTER*/
 .footer {
   padding: 40px 0;
-  background-color: #faebd7;
+  background-color: peachpuff;
   color: #4b4c4d; }
 
 .footer__pages {
@@ -358,11 +380,17 @@ button {
     right: 0; }
 
 /*MEDIA QUERIES*/
-@media all and (min-width: 600px) {
+@media all and (min-width: 601px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1%; } }
+    margin-bottom: 1%; }
+  .titu {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%; } }
 
 @media all and (max-width: 600px) {
   .navbar-expand-lg .navbar-collapse {
@@ -394,4 +422,38 @@ button {
   .ow {
     font-size: 250%; }
   .lol {
-    font-size: 350%; } }
+    font-size: 350%; }
+  .titu {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%; } }
+
+.sexo {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%; }
+
+.card {
+  background-color: peachpuff; }
+
+.card-body {
+  margin-bottom: 4%;
+  margin-top: 0%; }
+
+.btn-primary {
+  background-color: red;
+  opacity: 0.5;
+  border-color: black; }
+
+.descripcion {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  border: dashed black 2px; }

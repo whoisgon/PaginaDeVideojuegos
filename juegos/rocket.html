@@ -1,67 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo/style.css" />
+    <link rel="icon" href="../img/logo.png" />
+    <title>Goratu Gaming - Tienda de Videojuegos</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../estilo/style.css">
-	<link rel="icon" href="../img/logo.png" />
-	<title>Goratu Gaming - Tienda de Videojuegos</title>
-</head>
-
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="../paginas/info.html">Info</a></li>
-				<li><a href="../paginas/contacto.html">Contacto</a></li>
-				<li><a href="../paginas/sponsors.html">Sponsors</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<h1>Noticias</h1>
-		<h2>Valorant</h2>
-		<img src="../img/noticia1.png" alt="noticia1" title="actualizacion parche 4.01">
-		<h3>ACTUALIZACIONES DE CUESTIONES SOCIALES</h3>
-		<p>Esperamos poder aprovechar las listas que tanto tu como otros jugadores crean y, comparandolas con las de
-			otras regiones, podamos reducir el nivel de toxicidad en el chat, asi como usar la informacion que recabamos
-			para mejorar nuestro propio sistema de deteccion. Desde ya, agradecemos a quienes puedan darnos una mano.
-			¡Hagamos de VALORANT un lugar mejor para toda la comunidad!</p>
-		<h3>ACTUALIZACIONES DE ARMAS</h3>
-		<u>
-			<h4>ARES</h4>
-		</u>
-		<p>La version 4.0 trajo consigo cambios a la Ares que aumentaron considerablemente su poder, y nos alegra ver
-			que se utiliza mas en el juego. Sin embargo, dichos reajustes la hicieron un arma mas facil de maniobrar y
-			la falta de cabeceo le quito parte del encanto que la hacia especial. Nos alegra ver que los ajustes
-			efectuados a la velocidad de disparo hayan mejorado la experiencia de uso con la Ares, asi que no haremos
-			mas cambios en ese aspecto. Sin embargo, los ajustes que aparecen a continuacion deberian dificultar el
-			control del arma y recuperar su antiguo caracter al incluir una precision inversa mas prominente.</p>
-
-		<p>Aumentamos su precio de 1550 >>> 1600.</p>
-		<p>Aumentamos su curva de retroceso.</p>
-		<p>Cambiamos la propagacion de 0.8 >>> 0.7 (tras disparar 10 balas) a 1.0 >>> 0.7 (tras disparar 13 balas).</p>
-		<p>Redujimos el beneficio de agacharse en propagacion y retroceso del 40% >>> 25%.</p>
-		<u>
-			<h4>MELEE</h4>
-		</u>
-		<P>Es un tanto complicado apuntar con las armas melee, lo que las hace poco confiables. Así que actualizamos los
-			ataques melee con el clic izquierdo y el derecho para que sean más confiables a la hora de matar agentes.
-		</P>
-		<p>Las áreas de detección al atacar con clic derecho ahora son 1.5 veces más grandes. Las áreas de detección al
-			atacar con clic izquierdo ahora son más grandes que las del clic derecho y también tienen un alcance un poco
-			mayor.</p>
-		<p>Los objetivos que estén más cerca del centro de los ataques con cuchillo recibirán el impacto primero, así
-			que el arma melee aún tendrá precisión.</p>
-		<p>Extra: Acuchillar paredes ahora tiene una reacción inmediata al hacer un tajo en una pared (lo cual se
-			predice del lado del cliente). </p>
-	</main>
-	<footer>
-		<p>Creado por Gonzalo Turati</p>
-	</footer>
-
-</body>
-
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active underline" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active underline" href="../paginas/info.html">Informacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active underline" href="../paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active underline"href="../paginas/sponsors.html">Sponsors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+		<div class="titu">
+			<img src="../img/nuevas imagenes/titulo.png" alt="Titulazo" width="100%" />
+		</div>
+    <hr><hr>
+    <div id="carouselExampleControls" class="carousel slide sexo" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/nuevas imagenes/kayn.jpg" class="d-block w-100" alt="Kayn" title="Kayn, el asesino sombrío">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/nuevas imagenes/soraka.jpg" class="d-block w-100" alt="Soraka" title="Soraka, cabrita sanadora">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/nuevas imagenes/yasuo.jpg" class="d-block w-100" alt="Yasuo" title="Yasuo, el hoseki del mal">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr><hr>
+    <div>
+      <p class="lol">Bienvenidos a la liga de las leyendas</p>
+    </div>
+    <div class="centros">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/WWa5uAzYDkQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p>
+      <a class="btn btn-primary sexo" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Requisitos
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <div class="contenedores">
+        <div>
+          <h3>Minimos</h3>
+          <ul>
+            <li>
+              SO: Windows 7,8,10
+            </li>
+            <li>
+              Almacenamiento: 16 GB de disco solido
+            </li>
+            <li>
+              GPU: NVidia: GeForce 9600GT <p>AMD: HD 6570  <br>Intel: Intel HD 4600 Integrated Graphics
+            </li>
+            <li>
+              CPU: Intel: Core i3-530 <br>AMD: A6-3650
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recomendados</h3>
+          <ul>
+            <li>
+              SO: Windows 10
+            </li>
+            <li>
+              Almacenamiento: 16 GB de disco SSD
+            </li>
+            <li>
+              GPU: NVidia: GeForce 560 <p>AMD: Radeon HD 6950  <br>Intel: Intel UHD 630 Integrated Graphics
+            </li>
+            <li>
+              CPU: Intel: Core i5-3300 <br>AMD: Ryzen 3 1200
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div>
+      <p class="descripcion">League of Legends (también conocido por sus siglas LoL) es un videojuego del género multijugador de arena de batalla en línea (MOBA) y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X y para consolas digitales. En un principio los servidores estaban alojados en la empresa GOA y fue vendida a la empresa china Tencent Holdings Limited.<br>
+        El juego fue diseñado para el sistema operativo Microsoft Windows y lanzaron una beta para OS X, dejando al poco tiempo el proyecto de lado. Esta beta ha sido mejorada por parte de usuarios del juego, haciendo posible jugar a una versión actualizada de League of Legends.<br>
+        En octubre de 2012, contaba con 70 millones de jugadores registrados. Para marzo de 2013 se registró 5 millones de jugadores conectados al mismo tiempo en todo el mundo. Es un juego de alta competitividad siendo uno de los juegos más populares de los deportes electrónicos (e-sports).<br>
+        El juego está inspirado en el popular mapa personalizado del Warcraft III, Defense of the Ancients: Allstars, diseñado por Steve «Guinsoo» Feak, el cual a su vez está basado en el escenario de StarCraft «Aeon of Strife».<br>
+      
+      </p>
+    </div>
+    </main>
+    <div class="footer">
+      <footer>
+          <div class="social"><a href="https://github.com/whoisgon" rel="noreferrer" target="_blank"><i class="icon ion-social-github"></i></a><a href="https://www.instagram.com/gon_turati/" rel="noreferrer" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://twitter.com/_gon01" rel="noreferrer" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/gonzalo-turati-224658219/" rel="noreferrer" target="_blank"><i class="icon ion-social-linkedin"></i></a></div>
+              <ul class="list-inline">
+                  <li class="list-inline-item hvr--float"><a href="#">Politicas de Privacidad</a></li>
+              </ul>
+      </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>

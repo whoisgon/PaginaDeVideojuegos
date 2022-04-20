@@ -1,4 +1,6 @@
 @import "variable";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /*PÁGINAS GENERALES*/
 
 * {
@@ -11,7 +13,10 @@
 }
 h3{
   padding: 2rem;
-} 
+}
+h4{
+  padding: 1rem;
+}  
   body {
     background-color: antiquewhite;
   }
@@ -87,106 +92,13 @@ hr:not([size]) {
     height: 100%;
   }
   
-  .subcentros {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 600%;
-    height: 390px;
-  }
-  
-  /*OW CONTENIDO*/
-  
-  .newsow {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 8%;
-    width: 40%;
-    height: 40%;
-  }
+  /*CONTENIDO PAGINAS*/
   
   .ow {
-    font-family: 'Friz Quadrata';
-    font-style: bold;
+    font-family: 'Bebas Neue', cursive;
     margin-bottom: 2%;
     text-align: center;
-    font-size: 350%;
-  }
-  
-  /*LOL CONTENIDO*/
-  
-  .newslol {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 8%;
-    width: 40%;
-    height: 40%;
-  }
-  
-  .lol {
-    font-family: 'Friz Quadrata';
-    font-style: bold;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 400%;
-  }
-  
-  /*VALORANT CONTENIDO*/
-  
-  .news {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 8%;
-    width: 75%;
-    height: 75%;
-  }
-  
-  .anuncios {
-    width: 60%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    margin-top: 3%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  .prueba {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 30%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  
-  .valorcontent {
-    font-family: 'Oswald', sans-serif;
-    margin-top: 10%;
-    margin-right: 8%;
-    font-style: bold;
-    font-size: 21px;
-    text-align: justify;
-  }
-  
-  .valorcont {
-    font-family: 'Oswald', sans-serif;
-    font-style: bold;
-    font-size: 20px;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 2%;
-  }
-  
-  .valor {
-    text-align: center;
-    font-size: 400%;
-    font-family: 'VALORANT';
-    font-style: bold;
-    margin-bottom: 2%;
+    font-size: 750%;
   }
   
   /*Formulario - Consultas*/
@@ -296,9 +208,7 @@ hr:not([size]) {
   /*FOOTER*/
   
   .footer {
-    padding: 40px 0;
-    background-color: peachpuff;
-    color: #4b4c4d;
+    @include footer;
   }
   
   .footer__pages {
@@ -418,6 +328,15 @@ hr:not([size]) {
     justify-content: center;
     text-align: center;
   }
+  .informacion{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+  }
   
   /*ANIMACIONES*/
   
@@ -497,22 +416,8 @@ hr:not([size]) {
       justify-content: space-around;
       width: 90%;
       height: 90%;
-    }
-  
-    .prueba {
-      margin-right: 2.5%;
-      margin-left: 2.5%;
-    }
-  
-    .valor {
-      font-size: 300%;
-    }
-  
+    } 
     .ow {
-      font-size: 250%;
-    }
-  
-    .lol {
       font-size: 350%;
     }
 
@@ -535,6 +440,7 @@ hr:not([size]) {
   }
   .card{
     background-color: peachpuff;
+    font-size: 10px;
   }
   .card-body{
     margin-bottom: 4%;

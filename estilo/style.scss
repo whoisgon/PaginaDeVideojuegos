@@ -430,12 +430,10 @@ hr:not([size]) {
     }
   }
   .sexo{
+    @extend .info;
     margin-top: 4%;
     margin-bottom: 4%;
     width: 80%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     margin-left: 10%;
   }
   .card{

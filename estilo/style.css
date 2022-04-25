@@ -20,14 +20,14 @@ body {
   background-color: antiquewhite; }
 
 .text {
-  font-family: 'Nunito', sans-serif; }
+  font-family: "Nunito", sans-serif; }
 
 ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   list-style-type: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 150%; }
 
 hr {
@@ -49,10 +49,6 @@ hr:not([size]) {
   justify-content: space-evenly; }
 
 /*NAVBAR*/
-.nav-item {
-  display: flex;
-  justify-content: space-between; }
-
 .navbar {
   padding-top: 0;
   padding-bottom: 0; }
@@ -81,21 +77,22 @@ a {
 
 /*CONTENIDO PAGINAS*/
 .ow {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: 2%;
   text-align: center;
   font-size: 750%; }
 
 /*Formulario - Consultas*/
 .body--form {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
   color: black;
-  margin: 0; }
+  margin: 0;
+  margin-top: 5%; }
   .body--form::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -110,8 +107,10 @@ button {
   border: none; }
 
 .form--body {
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem; }
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.25rem;
+  border-color: red;
+  border-style: outset; }
 
 .container--form {
   width: 60%;
@@ -139,7 +138,7 @@ button {
   width: 95.5%;
   padding: 0.625rem;
   resize: none;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .submit--button {
   display: block;
@@ -266,7 +265,10 @@ button {
     background-position: 200% center; } }
 
 /* Iconos */
-.ion-social-github:before, .ion-social-instagram:before, .ion-social-twitter:before, .ion-social-facebook:before {
+.ion-social-github:before,
+.ion-social-instagram:before,
+.ion-social-twitter:before,
+.ion-social-facebook:before {
   margin-top: 5px; }
 
 /*INFO PESTAÑA*/
@@ -280,7 +282,7 @@ button {
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px; }
 
 /*ANIMACIONES*/
@@ -312,11 +314,14 @@ button {
     right: 0; }
 
 /*MEDIA QUERIES*/
-@media all and (min-width: 601px) {
+@media all and (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 1%; }
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-weight: 400; }
   .titu {
     width: 50%;
     align-items: center;
@@ -324,7 +329,7 @@ button {
     text-align: center;
     margin-left: 25%; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 991px) {
   .navbar-expand-lg .navbar-collapse {
     margin-bottom: 1%; }
   .portadas {
